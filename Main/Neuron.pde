@@ -3,16 +3,10 @@ class Neuron {
   private double bias;
   private double value;
   
-  public Neuron(int numOfweights) {
-    weights = new double[numOfweights];
-    value = 0;
-    bias = 0;
-  }
-  
-  public Neuron(double[] presetWeights) {
+  public Neuron(double[] presetWeights, int ibias) {
     weights = presetWeights;
     value = 0;
-    bias = 0;
+    bias = ibias;
   }
   public Neuron(double presetValue) {
     weights = new double[0];
